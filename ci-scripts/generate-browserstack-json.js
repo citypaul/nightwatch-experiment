@@ -33,7 +33,7 @@ var json = {
                 "javascriptEnabled": true,
                 "acceptSslCerts": true,
                 "browserstack.user": process.env.BROWSERSTACK_USER,
-                "browserstack.key": process.env.BROWSERSTACK_KEY || "zszwSeG4qbZAE1C1DyAi"
+                "browserstack.key": process.env.BROWSERSTACK_KEY
             }
         }
     }
