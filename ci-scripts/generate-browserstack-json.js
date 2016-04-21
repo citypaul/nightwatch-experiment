@@ -4,7 +4,7 @@ var json = {
     ],
     "test_workers": {
         "enabled": true,
-        "workers": "auto"
+        "workers": 5
     },
     "output_folder": "reports",
     "custom_commands_path": "",
