@@ -44,6 +44,15 @@
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
+    },
+    "headless": {
+      "desiredCapabilities" : {
+        "browserName" : "phantomjs",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "phantomjs.binary.path" : "/usr/bin/phantomjs",
+        "phantomjs.cli.args" : ["--version"]
+      }
     }
   }
 }
