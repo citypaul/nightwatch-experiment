@@ -11,13 +11,11 @@ var json = {
     "custom_assertions_path": "",
     "page_objects_path": "",
     "globals_path": "",
-    "live_output": true,
     "selenium": {
         "start_process": false,
         "host": "hub.browserstack.com",
         "port": 80
     },
-
     "test_settings": {
         "default": {
             "launch_url": "http://hub.browserstack.com",
