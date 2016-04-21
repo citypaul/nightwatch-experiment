@@ -43,15 +43,7 @@ var jsonfile = require('jsonfile'),
     path = require('path');
 
 jsonfile.writeFile(path.dirname(__filename) + "/../browserstack.json", json, function (err) {
-    console.error(err);
-
+    if (err) {
+        console.error('error: ', err);
+    }
 });
-
-//
-//fs.writeFile(, json, function(err) {
-//    if(err) {
-//        return console.log(err);
-//    }
-//
-//    console.log('Written: ', JSON.stringify(json, null, 2));
-//});
