@@ -27,7 +27,7 @@ var json = {
                 "path": ""
             },
             "desiredCapabilities": {
-                "browserName": "firefox",
+                "browserName": "chrome",
                 "javascriptEnabled": true,
                 "acceptSslCerts": true,
                 "browserstack.user": process.env.BROWSERSTACK_USER,
