@@ -6,6 +6,7 @@ var json = {
         "enabled": true,
         "workers": 5
     },
+    "live_output": true,
     "output_folder": "reports",
     "custom_commands_path": "",
     "custom_assertions_path": "",
