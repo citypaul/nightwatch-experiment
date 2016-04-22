@@ -6,7 +6,7 @@ var json = {
         "enabled": true,
         "workers": 5
     },
-    "live_output": process.env.LIVE_OUTPUT,
+    "live_output": process.env.LIVE_OUTPUT === "true",
     "output_folder": "reports",
     "custom_commands_path": "",
     "custom_assertions_path": "",
