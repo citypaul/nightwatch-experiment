@@ -4,7 +4,7 @@ var json = {
     ],
     "test_workers": {
         "enabled": true,
-        "workers": 10
+        "workers": 20
     },
     "live_output": process.env.LIVE_OUTPUT === "true",
     "output_folder": "reports",
