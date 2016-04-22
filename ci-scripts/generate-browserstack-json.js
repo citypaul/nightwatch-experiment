@@ -4,7 +4,7 @@ var json = {
     ],
     "test_workers": {
         "enabled": true,
-        "workers": 5
+        "workers": 10
     },
     "live_output": process.env.LIVE_OUTPUT === "true",
     "output_folder": "reports",
@@ -33,6 +33,9 @@ var json = {
                 "acceptSslCerts": true,
                 "browserstack.user": process.env.BROWSERSTACK_USER,
                 "browserstack.key": process.env.BROWSERSTACK_KEY
+            },
+            "internet_explorer": {
+
             }
         }
     }
