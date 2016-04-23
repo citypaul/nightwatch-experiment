@@ -4,7 +4,7 @@ var json = {
     ],
     "test_workers": {
         "enabled": true,
-        "workers": process.env.NUMBER_OF_WORKERS
+        "workers": parseInt(process.env.NUMBER_OF_WORKERS)
     },
     "live_output": process.env.LIVE_OUTPUT === "true",
     "output_folder": "reports",
