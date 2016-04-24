@@ -1,4 +1,6 @@
-var config = require('../config');
+var appRoot = require('app-root-path');
+var config = require(appRoot + '/config');
+
 var json = {
     "src_folders": [
         "tests"
