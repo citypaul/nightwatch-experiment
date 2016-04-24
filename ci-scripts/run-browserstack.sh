@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-node_modules/eslint/bin/eslint.js tests
+node_modules/eslint/bin/eslint.js tests config
 
 curl -O https://s3-eu-west-1.amazonaws.com/live-sport-jenkins-master-infr-s3bucket-9evb9cmf37pg/BrowserStackLocal-linux-x64-3.8.zip
 unzip -o BrowserStackLocal-linux-x64-3.8.zip
