@@ -1,6 +1,6 @@
 module.exports = {
     url: {
-        desktop: 'http://www.test.bbc.co.uk/sport',
-        mobile: 'http://m.test.bbc.co.uk/sport'
+        desktop: 'http://pal.sandbox.dev.bbc.co.uk/sport',
+        mobile: 'http://m.sandbox.dev.bbc.co.uk/sport'
     }
 };
