@@ -1,4 +1,5 @@
-var config = require('../config');
+var appRoot = require('app-root-path');
+var config = require(appRoot + '/config');
 
 module.exports = {
     before: function(browser) {
