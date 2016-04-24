@@ -7,7 +7,7 @@ var json = {
     ],
     "test_workers": {
         "enabled": true,
-        "workers": config.browserstack.workers
+        "workers": config.nightwatch.workers
     },
     "live_output": config.browserstack.liveOutput,
     "output_folder": "reports",
@@ -42,11 +42,5 @@ var json = {
     }
 };
 
-var jsonfile = require('jsonfile'),
-    path = require('path');
+require(appRoot + '/config/nightwatch-config-writer')('browserstack', config);
 
-jsonfile.writeFile(path.dirname(__filename) + "/../browserstack.json", json, function (err) {
-    if (err) {
-        console.error('error: ', err);
-    }
-});

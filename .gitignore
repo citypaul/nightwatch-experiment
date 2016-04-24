@@ -2,3 +2,4 @@ reports
 .idea
 node_modules
 browserstack.json
+nightwatch.json

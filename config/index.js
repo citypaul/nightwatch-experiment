@@ -4,10 +4,12 @@ var config = {
     int: 'int',
     test: 'test',
     live: 'live',
+    nightwatch: {
+        workers: parseInt(process.env.NUMBER_OF_WORKERS) || "auto"
+    },
     browserstack: {
         user: process.env.BROWSERSTACK_USER,
         key: process.env.BROWSERSTACK_KEY,
-        workers: parseInt(process.env.NUMBER_OF_WORKERS),
         liveOutput: process.env.LIVE_OUTPUT === "true"
     }
 };
