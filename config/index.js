@@ -16,6 +16,6 @@ var envConfig;
 process.env.ENV = process.env.ENV || config.dev;
 config.env = process.env.ENV;
 
-envConfig = require('./' + config.env);
+envConfig = require('./environments/' + config.env);
 
 module.exports = _.merge(config, envConfig);
