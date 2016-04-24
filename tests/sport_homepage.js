@@ -1,19 +1,22 @@
 module.exports = {
-    before: function (browser) {
+    before: function(browser) {
+        var width = 1000;
+        var height = 800;
         browser.url('http://www.bbc.co.uk/sport')
-            .resizeWindow(1000, 800);
+            .resizeWindow(width, height);
     },
 
-    'Morph live scores': function (browser) {
-        browser.waitForElementVisible('.primary-nav', 1000)
-            .waitForElementVisible('button.sp-c-filter-nav__button', 1000)
-            .pause(1000)
+    'Morph live scores': function(browser) {
+        var wait = 1000;
+        browser.waitForElementVisible('.primary-nav', wait)
+            .waitForElementVisible('button.sp-c-filter-nav__button', wait)
+            .pause(wait)
             .assert.elementPresent('#morph-live-scores')
-            .assert.containsText('#morph-live-scores', 'Football Scores')
+            .assert.containsText('#morph-live-scores', 'Football Scores');
 
     },
 
-    'Headlines': function (browser) {
+    'Headlines': function(browser) {
         browser.assert.elementPresent('.anfield');
     },
 

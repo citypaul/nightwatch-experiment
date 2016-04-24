@@ -1,12 +1,13 @@
 module.exports = {
-    'Demo test Google' : function (browser) {
+    'Demo test Google': function(browser) {
+        var wait = 1000;
         browser
             .url('http://www.google.com')
-            .waitForElementVisible('body', 1000)
+            .waitForElementVisible('body', wait)
             .setValue('input[type=text]', 'nightwatch')
-            .waitForElementVisible('button[name=btnG]', 1000)
+            .waitForElementVisible('button[name=btnG]', wait)
             .click('button[name=btnG]')
-            .pause(1000)
+            .pause(wait)
             .assert.containsText('#main', 'Night Watch')
             .end();
     }
