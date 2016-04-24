@@ -35,7 +35,8 @@ var json = {
                 "javascriptEnabled": true,
                 "acceptSslCerts": true,
                 "browserstack.user": config.browserstack.user,
-                "browserstack.key": config.browserstack.key
+                "browserstack.key": config.browserstack.key,
+                "browserstack.local": true
             }
         }
     }
