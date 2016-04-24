@@ -1,19 +1,28 @@
 {
-  "name": "nightwatch-experiment",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "app-root-path": "^1.0.0",
-    "eslint": "^2.8.0",
-    "jsonfile": "^2.3.0",
-    "lodash": "^4.11.1",
-    "nightwatch": "^0.8.18",
-    "selenium-webdriver": "^2.53.1"
-  }
+    "name": "nightwatch-experiment",
+    "version": "1.0.0",
+    "description": "Onesport nightwatch tests",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "contributors": [
+        {
+            "name": "Paul Hammond",
+            "email": "paul.hammond@bbc.co.uk"
+        },
+        {
+            "name": "Timothy Pearce",
+            "email": "timothy.pearce@bbc.co.uk"
+        }
+    ],
+    "license": "ISC",
+    "dependencies": {
+        "app-root-path": "^1.0.0",
+        "eslint": "^2.8.0",
+        "jsonfile": "^2.3.0",
+        "lodash": "^4.11.1",
+        "nightwatch": "^0.8.18",
+        "selenium-webdriver": "^2.53.1"
+    }
 }
