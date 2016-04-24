@@ -42,5 +42,5 @@ var json = {
     }
 };
 
-require(appRoot + '/config/nightwatch-config-writer')('browserstack', config);
+require(appRoot + '/config/nightwatch-config-writer')('browserstack', json);
 
