@@ -3,3 +3,4 @@ reports
 node_modules
 browserstack.json
 nightwatch.json
+BrowserStackLocal*
