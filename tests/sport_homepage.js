@@ -1,8 +1,10 @@
+var config = require('../config');
+
 module.exports = {
     before: function(browser) {
         var width = 1000;
         var height = 800;
-        browser.url('http://www.bbc.co.uk/sport')
+        browser.url(config.url.desktop)
             .resizeWindow(width, height);
     },
 

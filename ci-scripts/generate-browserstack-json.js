@@ -1,12 +1,13 @@
+var config = require('../config');
 var json = {
     "src_folders": [
         "tests"
     ],
     "test_workers": {
         "enabled": true,
-        "workers": parseInt(process.env.NUMBER_OF_WORKERS)
+        "workers": config.browserstack.workers
     },
-    "live_output": process.env.LIVE_OUTPUT === "true",
+    "live_output": config.browserstack.liveOutput,
     "output_folder": "reports",
     "custom_commands_path": "",
     "custom_assertions_path": "",
@@ -31,8 +32,8 @@ var json = {
                 "browserName": "chrome",
                 "javascriptEnabled": true,
                 "acceptSslCerts": true,
-                "browserstack.user": process.env.BROWSERSTACK_USER,
-                "browserstack.key": process.env.BROWSERSTACK_KEY
+                "browserstack.user": config.browserstack.user,
+                "browserstack.key": config.browserstack.key
             }
         }
     }
