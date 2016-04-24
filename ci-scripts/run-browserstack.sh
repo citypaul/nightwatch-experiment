@@ -7,7 +7,7 @@ curl -O https://s3-eu-west-1.amazonaws.com/live-sport-jenkins-master-infr-s3buck
 unzip -o BrowserStackLocal-linux-x64-3.8.zip
 
 ./BrowserStackLocal $BROWSERSTACK_KEY -forcelocal >/dev/null 2>&1 &
-
+PROXY_PID=$!
 
 node ci-scripts/generate-browserstack-json.js
 node_modules/nightwatch/bin/nightwatch tests/*.js -c browserstack.json --retries $RETRIES
@@ -16,4 +16,6 @@ node_modules/nightwatch/bin/nightwatch tests/*.js -c browserstack.json --retries
 success=$?
 
 rm browserstack.json
+kill $PROXY_PID
+
 exit ${success}
